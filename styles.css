@@ -5,10 +5,24 @@
 }
 
 .container {
-    width: 40%;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    background: lightgray;
+    background: #333; ;
+}
+
+.timer-display {
+    background-color:black ;
+    color: green;
+    font-size: 30px; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;  
+    letter-spacing: 2px; 
 }
