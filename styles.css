@@ -1,28 +1,86 @@
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
 .container {
     width: 320px;
     padding: 20px;
-    border-radius: 10px;
-text-align: center;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background: #333; ;
+    border-radius: 12px;
+    background: #2e2e2e;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative; /* Adjusted from absolute to relative */
 }
 
+/* Timer display styling */
 .timer-display {
-    background-color:black ;
-    color: green;
-    font-size: 30px; 
-    border-radius: 8px;
+    background-color: #000;
+    color: #00ff00;
+    font-size: 25px;
+    border-radius: 12px;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;  
-    letter-spacing: 2px; 
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #00ff00; /* Added border for better visibility */
+}
+
+/* Action buttons container styling */
+.action {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Action button styling */
+.action div {
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hover effects for buttons */
+.action div:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+/* Active state for buttons */
+.action div:active {
+    background: #333;
+    transform: translateY(1px);
+}
+
+/* Styling for the lap list */
+.laps {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #ddd;
+    text-align: left;
+}
+
+/* Styling for individual lap items */
+.laps li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
 }
